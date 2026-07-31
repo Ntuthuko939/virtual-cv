@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mpho D. — Virtual CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BOOT SEQUENCE OVERLAY -->
+<div id="boot-screen">
+  <div class="boot-terminal">
+    <p class="boot-line" data-text="> initializing profile.exe"></p>
+    <p class="boot-line" data-text="> loading modules: cybersecurity, dev, cloud, networks, data"></p>
+    <p class="boot-line" data-text="> compiling four years of coursework..."></p>
+    <p class="boot-line" data-text="> access granted."></p>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+
+  <!-- SIDEBAR / FILE EXPLORER NAV -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="prompt">~/mpho</span>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+    <ul class="file-tree">
+      <li><a href="#about" class="file-link active" data-target="about"><span class="file-icon">📄</span>about.md</a></li>
+      <li><a href="#resume" class="file-link" data-target="resume"><span class="file-icon">📋</span>resume.pdf</a></li>
+      <li><a href="#projects" class="file-link" data-target="projects"><span class="file-icon">📁</span>projects/</a></li>
+      <li><a href="#skills" class="file-link" data-target="skills"><span class="file-icon">⚙</span>skills.json</a></li>
+      <li><a href="#contact" class="file-link" data-target="contact"><span class="file-icon">📡</span>contact.sh</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <span class="status-dot"></span> status: open to work
+    </div>
+  </nav>
+
+  <main class="content">
+
+    <!-- HERO / ABOUT -->
+    <section id="about" class="panel hero-panel reveal">
+      <div class="hero-grid">
+        <div class="avatar-hex">
+          <svg viewBox="0 0 100 115" class="hex-shape">
+            <polygon points="50,2 95,28 95,86 50,113 5,86 5,28" />
+          </svg>
+          <span class="avatar-initials">MD</span>
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">// about.md</p>
+          <h1>Mpho D.</h1>
+          <p class="role-line">Final-year BIT student &mdash; <span id="typewriter" class="typewriter"></span><span class="cursor">|</span></p>
+          <p class="hero-body">
+            I'm a final-year Bachelor of Information Technology student at North-West University,
+            graduating in 2026. Across four years I've built systems spanning web platforms,
+            databases, and networks — and I'm now looking for a graduate role where I can put
+            that range to work. I hold a Simplilearn Cybersecurity certificate and completed
+            the NWU Work &amp; Entrepreneurial Readiness Programme.
+          </p>
+          <div class="hero-actions">
+            <a href="resume.pdf" class="btn btn-primary" download>↓ Download CV</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SUMMARY -->
+    <section id="resume" class="panel reveal">
+      <p class="eyebrow">// resume.pdf</p>
+      <h2>Resume Summary</h2>
+      <div class="resume-grid">
+        <div class="resume-block">
+          <h3>Education</h3>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <strong>Bachelor of Information Technology</strong>
+              <span class="tag">2023 – 2026</span>
+            </div>
+            <p>North-West University (NWU) — final-year student</p>
+            <p class="muted">Coursework: Web Development (ASP.NET), Databases, Artificial Intelligence,
+              Computer Networks, Discrete Mathematics, Systems Analysis &amp; Design.</p>
+          </div>
+        </div>
+        <div class="resume-block">
+          <h3>Certifications</h3>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <strong>Cybersecurity Certificate</strong>
+              <span class="tag">Simplilearn — Apr 2025</span>
+            </div>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <strong>Work &amp; Entrepreneurial Readiness Programme</strong>
+              <span class="tag">NWU</span>
+            </div>
+          </div>
+        </div>
+        <div class="resume-block">
+          <h3>Target Roles</h3>
+          <div class="pill-row">
+            <span class="pill">Cybersecurity</span>
+            <span class="pill">Software Development</span>
+            <span class="pill">Cloud Engineering</span>
+            <span class="pill">Networking &amp; Sys Admin</span>
+            <span class="pill">Data &amp; Databases</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel reveal">
+      <p class="eyebrow">// projects/</p>
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="folder-icon">📁</span>
+            <h3>load-shedding-survival-guide</h3>
+          </div>
+          <p>An ASP.NET web app helping users track and plan around load-shedding schedules,
+            built with session state, cookies, and dynamic scheduling logic.</p>
+          <div class="pill-row small">
+            <span class="pill">ASP.NET</span>
+            <span class="pill">C#</span>
+            <span class="pill">Session State</span>
+          </div>
+          <a href="[ADD-LINK-GITHUB]/load-shedding-survival-guide" class="project-link">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="folder-icon">📁</span>
+            <h3>athletic-championship-app</h3>
+          </div>
+          <p>Registration system for athletic championship events, featuring calendar controls,
+            form validation, and structured event scheduling.</p>
+          <div class="pill-row small">
+            <span class="pill">ASP.NET</span>
+            <span class="pill">C#</span>
+            <span class="pill">Validation</span>
+          </div>
+          <a href="[ADD-LINK-GITHUB]/athletic-championship-app" class="project-link">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="folder-icon">📁</span>
+            <h3>tutorchain</h3>
+          </div>
+          <p>A tutoring slot-booking platform built around calendar scheduling and session
+            management, designed for students booking tutor time.</p>
+          <div class="pill-row small">
+            <span class="pill">ASP.NET</span>
+            <span class="pill">Booking System</span>
+          </div>
+          <a href="[ADD-LINK-GITHUB]/tutorchain" class="project-link">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="folder-icon">📁</span>
+            <h3>full-stack-web-app</h3>
+          </div>
+          <p>Group capstone project built with team collaborators — full-stack application
+            covering front-end, back-end, and database layers.</p>
+          <div class="pill-row small">
+            <span class="pill">Full-Stack</span>
+            <span class="pill">Team Project</span>
+          </div>
+          <a href="[ADD-LINK-GITHUB]/full-stack-web-app" class="project-link">View repository →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel reveal">
+      <p class="eyebrow">// skills.json</p>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Languages &amp; Frameworks</h3>
+          <ul class="skill-list">
+            <li><span>C# / ASP.NET</span><div class="bar"><div class="bar-fill" style="--pct:85%"></div></div></li>
+            <li><span>Java (OOP)</span><div class="bar"><div class="bar-fill" style="--pct:80%"></div></div></li>
+            <li><span>SQL / T-SQL</span><div class="bar"><div class="bar-fill" style="--pct:85%"></div></div></li>
+            <li><span>HTML / CSS / JavaScript</span><div class="bar"><div class="bar-fill" style="--pct:80%"></div></div></li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Systems &amp; Infrastructure</h3>
+          <ul class="skill-list">
+            <li><span>Networking (OSI/TCP-IP, Subnetting)</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+            <li><span>Database Design &amp; Transactions</span><div class="bar"><div class="bar-fill" style="--pct:80%"></div></div></li>
+            <li><span>SQL Server Concurrency</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+            <li><span>Cybersecurity Fundamentals</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Foundations</h3>
+          <ul class="skill-list">
+            <li><span>Artificial Intelligence (Search, FOL)</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+            <li><span>Discrete Mathematics</span><div class="bar"><div class="bar-fill" style="--pct:70%"></div></div></li>
+            <li><span>Systems Analysis &amp; Design</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+            <li><span>Algorithm Complexity Analysis</span><div class="bar"><div class="bar-fill" style="--pct:70%"></div></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel reveal">
+      <p class="eyebrow">// contact.sh</p>
+      <h2>Get in Touch</h2>
+      <div class="contact-grid">
+        <a href="mailto:mphod1406@gmail.com" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">mphod1406@gmail.com</span>
+        </a>
+        <a href="tel:0682617645" class="contact-card">
+          <span class="contact-icon">☎</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">068 261 7645</span>
+        </a>
+        <a href="[ADD-LINK-LINKEDIN]" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">in</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Connect with me</span>
+        </a>
+        <a href="[ADD-LINK-GITHUB]" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">⌥</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">View repositories</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Built by Mpho D. — North-West University, 2026</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
