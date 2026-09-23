@@ -2,7 +2,7 @@
 
 A single-page portfolio website built for the Profile Development assignment (BIT, North-West University). It serves as an interactive, dynamic CV showcasing academic background, projects, and skills.
 
-**Live site:** `[ADD-LINK-GITHUB-PAGES-URL]` (e.g. `https://<your-username>.github.io/virtual-cv/`)
+**Live site:** https://ntuthuko939.github.io/virtual-cv/ (e.g. `https://<your-username>.github.io/virtual-cv/`)
 
 ## Concept
 
